@@ -7,31 +7,31 @@
             "id": "1",
             "title": "Padre Jorge Bissoni",
             "body": "Misionero de la caridad 12/05/40  17/09/2023",
-            "image": "./assets/images/dan.jpg"
+            "image": "img/don5.jpg"
         },
         {
             "id": "2",
             "title": "Peregrinos del Señor",
             "body": "Fue su obra ejemplar, ofreciendoles amor, alegria y felicidad",
-            "image": "./assets/images/dan.jpg"
+            "image": "img/don2.jpeg"
         },
         {
             "id": "3",
             "title": "Sacerdote Cercano al Pueblo",
             "body": "Vivia y sufria con el, esto lo destacaba con humildad hacia los demás",
-            "image": "./assets/images/dan.jpg"
+            "image": "img/don1.jpg"
         },
         {
             "id": "4",
             "title": "Padre Peregrino ",
             "body": "Nunca detuvo son andar y a maria nos enseño a venerar",
-            "image": "./assets/images/dan.jpg"
+            "image": "img/don4.png"
         },
         {
             "id": "5",
             "title": "Fiel Ejemplo de Humildad ",
             "body": "Al mas necesitado ayudo sin desmayar",
-            "image": "./assets/images/dan.jpg"
+            "image": "img/don3.jpeg"
         }
     ]
 }
