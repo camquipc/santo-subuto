@@ -70,3 +70,20 @@ export const About = () => {
         </>
     )
 }
+
+
+/**
+ * 
+ * 
+ * const formElem = document.querySelector('form');
+        const input = document.querySelector('input');
+        formElem.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            await fetch('/upload', {
+                method: 'POST',
+                body: new FormData(formElem),
+            });
+
+            input.value = '';
+        });
+ */

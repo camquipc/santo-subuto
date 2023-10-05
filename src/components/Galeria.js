@@ -27,6 +27,9 @@ export const Galeria = () => {
     }, {
         "id": "8",
         "image": "img/don4.png"
+    }, {
+        "id": "9",
+        "image": "img/don23.jpeg"
     }]);
     return (
         <>
@@ -34,7 +37,7 @@ export const Galeria = () => {
                 <div className="container" data-aos="fade-up">
                     <div className="section-title">
                         <h2>Galería</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>Con su testimonio de vida dio a conocer la gran humildad que lo caracterizaba, su amor a Dios y al más necesitado,quien siempre recibió de él una mano amiga.</p>
                     </div>
                     <div className="galeria" data-aos="fade-up" data-aos-delay="200">
                         {
