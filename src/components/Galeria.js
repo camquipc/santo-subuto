@@ -37,7 +37,7 @@ export const Galeria = () => {
                 <div className="container" data-aos="fade-up">
                     <div className="section-title">
                         <h2>Galería</h2>
-                        <p>Con su testimonio de vida dio a conocer la gran humildad que lo caracterizaba, su amor a Dios y al más necesitado,quien siempre recibió de él una mano amiga.</p>
+                        <h4>Con su testimonio de vida dio a conocer la gran humildad que lo caracterizaba, su amor a Dios y al más necesitado,quien siempre recibió de él una mano amiga.</h4>
                     </div>
                     <div className="galeria" data-aos="fade-up" data-aos-delay="200">
                         {

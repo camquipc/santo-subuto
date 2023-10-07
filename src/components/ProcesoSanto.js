@@ -7,7 +7,7 @@ const ProcesoSanto = () => {
 
                 <div className="section-title">
                     <h2>La Canonización</h2>
-                    <p>Es el proceso que se lleva a cabo para una persona pueda convertirse en Santo. Dicho proceso se da en varias etapas.</p>
+                    <h4>Es el proceso que se lleva a cabo para una persona pueda convertirse en Santo. Dicho proceso se da en varias etapas.</h4>
                 </div>
                 <div className="row mb-3 ">
                     <div className="centrar_contenido col-lg-6 m-lg-auto col-md-6 m-md-auto d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">

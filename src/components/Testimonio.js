@@ -7,7 +7,7 @@ export default function Testimonio() {
                 <div className="container" data-aos="fade-up">
                     <div className="section-title">
                         <h2>Testimonios</h2>
-                        <p>Comparte con nosotros tu testimonio de alguna vivencia que hayas tenido con el padre Jorge que evidencie su vida de santidad.</p>
+                        <h4>Comparte con nosotros tu testimonio de alguna vivencia que hayas tenido con el padre Jorge que evidencie su vida de santidad.</h4>
                     </div>
                     <div className="row">
                         <div className="row mt-1">
