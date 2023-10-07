@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BsFillHouseFill, BsCameraVideoFill, BsCardImage, BsFilePersonFill, BsFillCaretRightSquareFill, BsFillPostcardHeartFill, BsFillEnvelopeAtFill } from "react-icons/bs";
+import { BsFillHouseFill, BsCameraVideoFill, BsCardImage, BsFilePersonFill, BsFillCaretRightSquareFill, BsFillPostcardHeartFill, BsFillEnvelopeAtFill, BsBoxArrowUp } from "react-icons/bs";
 export default function Header() {
     return (
         <>
@@ -33,6 +33,8 @@ export default function Header() {
                         <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
                         <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
                     </div>
+
+                    <button type='button' className='btn btn-outline-info btn-lg'><BsBoxArrowUp /> Subir tu Testimonio</button>
                 </div>
             </section>
         </>
