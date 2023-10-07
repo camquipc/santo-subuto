@@ -1255,3 +1255,23 @@ section {
 .archivos-container input {
   display: none;
 }
+
+.centrar_contenido {
+  display: flex;
+  justify-content: center;
+}
+
+.selected {
+  border: 2px solid #0563bb;
+  background-color: #c2e0f2 !important;
+}
+
+.pc-icon {
+  width: 100px;
+  height: 100px;
+}
+
+
+.services .icon-box {
+  width: 100%;
+}

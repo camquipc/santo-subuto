@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BsFillHouseFill, BsCameraVideoFill, BsCardImage, BsFilePersonFill, BsFillEnvelopeFill } from "react-icons/bs";
+import { BsFillHouseFill, BsCameraVideoFill, BsCardImage, BsFilePersonFill, BsFillCaretRightSquareFill, BsFillPostcardHeartFill, BsFillEnvelopeAtFill } from "react-icons/bs";
 export default function Header() {
     return (
         <>
@@ -9,9 +9,12 @@ export default function Header() {
                 <nav id="navbar" className="navbar nav-menu">
                     <ul>
                         <li><a href="#hero" className="nav-link scrollto active"><BsFillHouseFill /> <span>Inicio</span></a></li>
+                        <li><a href="#canonizacion" className="nav-link scrollto"><BsFillPostcardHeartFill /> <span>Canonización</span></a></li>
                         <li><a href="#biografia" className="nav-link scrollto"><BsFilePersonFill /> <span>Biografía</span></a></li>
                         <li><a href="#galeria" className="nav-link scrollto"><BsCardImage /> <span>Galería</span></a></li>
+                        <li><a href="#galeria" className="nav-link scrollto"><BsFillCaretRightSquareFill /> <span>Videos</span></a></li>
                         <li><a href="#testimonio" className="nav-link scrollto"><BsCameraVideoFill /> <span>Testimonio</span></a></li>
+                        <li><a href="#testimonio" className="nav-link scrollto"><BsFillEnvelopeAtFill /> <span>Contacto</span></a></li>
                     </ul>
                 </nav>
 
