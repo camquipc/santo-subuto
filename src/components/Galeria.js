@@ -28,8 +28,14 @@ export const Galeria = () => {
         "id": "8",
         "image": "img/don4.png"
     }, {
+        "id": "10",
+        "image": "img/don11.jpg"
+    }, {
         "id": "9",
         "image": "img/don23.jpeg"
+    }, {
+        "id": "11",
+        "image": "img/don10.jpeg"
     }]);
     return (
         <>

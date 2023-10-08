@@ -12,9 +12,9 @@ export default function Header() {
                         <li><a href="#canonizacion" className="nav-link scrollto"><BsFillPostcardHeartFill /> <span>Canonización</span></a></li>
                         <li><a href="#biografia" className="nav-link scrollto"><BsFilePersonFill /> <span>Biografía</span></a></li>
                         <li><a href="#galeria" className="nav-link scrollto"><BsCardImage /> <span>Galería</span></a></li>
-                        <li><a href="#galeria" className="nav-link scrollto"><BsFillCaretRightSquareFill /> <span>Videos</span></a></li>
+                        <li><a href="#videos" className="nav-link scrollto"><BsFillCaretRightSquareFill /> <span>Videos</span></a></li>
                         <li><a href="#testimonio" className="nav-link scrollto"><BsCameraVideoFill /> <span>Testimonio</span></a></li>
-                        <li><a href="#testimonio" className="nav-link scrollto"><BsFillEnvelopeAtFill /> <span>Contacto</span></a></li>
+
                     </ul>
                 </nav>
 

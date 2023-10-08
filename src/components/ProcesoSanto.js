@@ -16,7 +16,9 @@ const ProcesoSanto = () => {
                                 <img className="pc-icon" src='img/pc1.png' />
                             </div>
                             <h4><a href="">Postulación</a></h4>
-                            <p>La diócesis presenta un informe sobre la vida del candidato.</p>
+                            <p>El obispo diocesano y el postulador de la causa piden iniciar el proceso de canonización
+                                tras realizar una exhaustiva averiguación con personas
+                                que conocieron al candidato para saber si en verdad su vida fue ejemplar y virtuosa.</p>
                         </div>
                     </div>
                 </div>
