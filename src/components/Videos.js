@@ -10,12 +10,12 @@ export default function Videos() {
                     </div>
 
                     <div className='row mt-4'>
-                        <div className='col'>
+                        <div className='col col-sm-12 col-md-6 col-lg-6'>
                             <video width="640" height="360" controls className='img-thumbnail'>
                                 <source src='video/don2.mp4' type="video/mp4" />
                             </video>
                         </div>
-                        <div className='col'>
+                        <div className='col col-sm-12 col-md-6 col-lg-6'>
 
                             <video width="640" height="370" controls className='img-thumbnail'>
                                 <source src='video/don1.mp4' type="video/mp4" />

@@ -36,6 +36,18 @@ export const Galeria = () => {
     }, {
         "id": "11",
         "image": "img/don10.jpeg"
+    }, {
+        "id": "13",
+        "image": "img/don23.jpeg"
+    }, {
+        "id": "14",
+        "image": "img/don26.jpeg"
+    }, {
+        "id": "15",
+        "image": "img/don24.jpeg"
+    }, {
+        "id": "18",
+        "image": "img/don25.jpeg"
     }]);
     return (
         <>

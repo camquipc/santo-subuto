@@ -1156,8 +1156,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: #023360;
+  color: #fff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1213,7 +1213,7 @@ section {
 }
 
 #galeria {
-  background-color: #e2e2e2;
+  background: #fff8f85e;
   color: #45505b;
 }
 
@@ -1287,4 +1287,21 @@ section {
   top: 0;
   left: 0;
   right: 0;
+}
+
+#biografia {
+  background: rgba(5, 99, 187, 0.851);
+  color: #fff;
+}
+
+#biografia h2,
+h3 {
+  color: #fff;
+}
+
+
+.nav-menu a,
+.nav-menu a:focus {
+  color: #fff;
+  background: #373535;
 }

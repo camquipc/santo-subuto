@@ -7,7 +7,7 @@ export const Footer = () => {
             <div className="container">
 
                 <div className="copyright">
-                    &copy; Copyright <strong><span> < BsFillEnvelopeFill /> ssubito47@gmail.com</span></strong>.
+                    &copy; Copyright <strong><span> < BsFillEnvelopeFill /> ssubito47@gmail.com</span></strong>
                 </div>
 
             </div>

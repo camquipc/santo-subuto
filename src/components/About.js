@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <>
 
-            <section id="biografia" className="about pt-0">
+            <section id="biografia" className="about">
                 <div className="container" data-aos="fade-up">
 
                     <div className="section-title">
@@ -17,7 +17,7 @@ export const About = () => {
                             <img src="img/don5.jpg" className="img-thumbnail" alt="" />
                         </div>
                         <div className="col-lg-7 pt-4 pt-lg-0 content">
-                            <h3>UI/UX Designer &amp; Web Developer.</h3>
+
                             <p className="fst-italic">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua.

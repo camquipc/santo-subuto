@@ -34,7 +34,7 @@ export default function Header() {
                         <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
                     </div>
 
-                    <button type='button' className='btn btn-outline-info btn-lg'><BsBoxArrowUp /> Subir tu Testimonio</button>
+                    <button type='button' className='btn btn-primary btn-lg d-sm-block d-md-none d-lg-none'><BsBoxArrowUp /> AGREGAR TESTIMONIO</button>
                 </div>
             </section>
         </>
