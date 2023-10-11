@@ -27,7 +27,9 @@ function Slider({ childrens }) {
       <div className="container_sleder">
         {childrens.map((item, index) => {
           return (
-            <div className={itemActual === index ? "slide active" : "slide"}>
+            <div
+              key={index}
+              className={itemActual === index ? "slide active" : "slide"}>
               {itemActual === index && (
                 <>
                   <h1 className="sus-frases-text">"{item.title}</h1>
