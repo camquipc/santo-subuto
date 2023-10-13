@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
+
 import Slider from "./Slider";
 
 export default function Banner() {

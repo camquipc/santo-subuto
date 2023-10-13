@@ -19,7 +19,7 @@ function Slider({ childrens }) {
     function () {
       siguienteItem();
     }.bind(this),
-    4000
+    6000
   );
 
   return (

@@ -81,7 +81,7 @@ export default function Header() {
           <button
             type="button"
             className="btn btn-primary btn-lg d-sm-block d-md-none d-lg-none">
-            <BsBoxArrowUp /> Subir Testimonio
+            Subir Testimonio
           </button>
         </div>
       </section>

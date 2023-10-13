@@ -807,7 +807,8 @@ section {
   transition: all ease-in-out 0.3s;
   background: #fff;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
-  border-left: 0.2em solid #753fcc;;
+  border-left: 0.2em solid #753fcc;
+  ;
 }
 
 .services .icon-box .icon {
@@ -1307,7 +1308,10 @@ h3 {
   background: #753fcc;
 }
 
-.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
   color: #fff;
   background: #300a6f;
 }
@@ -1315,7 +1319,7 @@ h3 {
 .btn-primary {
   color: #fff;
   background: #753fcc;
-  border-color:  #753fcc;
+  border-color: #753fcc;
 }
 
 .btn-primary:hover {
@@ -1323,15 +1327,16 @@ h3 {
 
 }
 
-.nav-color-movil{
+.nav-color-movil {
   background-color: #300a6f !important;
   color: #fff !important;
 
 }
 
-.navbar-brand{
+.navbar-brand {
   color: #fff !important;
 }
+
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
@@ -1349,23 +1354,37 @@ h3 {
 }
 
 .nav-link {
-	color: #fff;
-  font: 1em sans-serif;
+  color: #fff;
+  font: 1.2em sans-serif;
+  background: #753fcc;
+  border-radius: 50%;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: var(--bs-navbar-nav-link-padding-x);
+  padding-left: var(--bs-navbar-nav-link-padding-x);
+  margin-right: 0.5rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: #753fcc;
+  background: #fff;
 }
 
-h4{
-  color:#45505b;
+h4 {
+  color: #45505b;
 }
-.ul-solicitud{
-  color:#45505b;
+
+.ul-solicitud {
+  width: 50%;
+  margin: 0 auto;
+  color: #45505b;
   text-align: left;
   list-style: none;
   padding: 0px;
 }
+
 .bd-example {
   padding: 1.5rem;
   margin-right: 0;
@@ -1373,12 +1392,11 @@ h4{
   border-width: .2rem;
 }
 
-.sus-frases{
+.sus-frases {
   width: 100%;
-  background: rgb(117,63,204);
-  background: linear-gradient(180deg, rgba(117,63,204,0.9261905445772058) 0%, rgba(98,22,131,1) 87%);
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  background: rgb(117, 63, 204);
+  background: linear-gradient(180deg, rgba(117, 63, 204, 0.9261905445772058) 0%, rgba(98, 22, 131, 1) 87%);
+  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1389,52 +1407,70 @@ h4{
 
 
 
-.sus-frases-text{
+.sus-frases-text {
   color: #fff;
   font-family: 'Dancing Script', cursive;
-  font-size: 3em;
-  }
+  font-size: 2.7rem;
+}
 
 
-  
-    @media (max-width: 465px) {
-      .sus-frases-text{
-        font-size: 1.6em;
-        }
-    }
 
-  .container_sleder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slide {
-    max-width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.75s ease-in-out;
-    text-align: center;
-  }
-  
-  .slide.active {
-    opacity: 1;
+@media (max-width: 465px) {
+  .sus-frases-text {
+    font-size: 1.6em;
   }
 
-  .slider-buton{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: 2em auto;
-
+  .ul-solicitud {
+    width: 90%;
   }
+}
 
-  .slider-buton button{
-    border: none;
-    background: transparent;
-    font-size: 2em;
-    color: #ffffff6b;
-  }
+.container_sleder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+  text-align: center;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slider-buton {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 2em auto;
+
+}
+
+.slider-buton button {
+  border: none;
+  background: transparent;
+  font-size: 2em;
+  color: #ffffff6b;
+}
+
+.me-auto {
+  margin-right: 0px;
+}
+
+.cita-text {
+  display: flex;
+  justify-content: end;
+}
+
+.about-h4 {
+  color: #fff;
+  padding-bottom: 0.7em;
+}

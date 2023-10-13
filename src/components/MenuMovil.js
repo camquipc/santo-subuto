@@ -9,9 +9,8 @@ import {
   BsFilePersonFill,
   BsFillCaretRightSquareFill,
   BsFillPostcardHeartFill,
-  BsFillEnvelopeAtFill,
 } from "react-icons/bs";
-import Offcanvas from "react-bootstrap/Offcanvas";
+
 
 export default function MenuMovil() {
   return (
@@ -23,7 +22,7 @@ export default function MenuMovil() {
         className="bg-body-tertiary d-sm-block d-md-none d-lg-none nav-color-movil">
         <Container>
           <Navbar.Brand href="#home">Santo Súbito</Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav >
             <Nav.Link href="#hero">
               <BsFillHouseFill />
             </Nav.Link>

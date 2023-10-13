@@ -9,7 +9,6 @@ export const About = () => {
 
                     <div className="section-title">
                         <h2>Biografía</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                     </div>
 
                     <div className="row">
@@ -17,37 +16,86 @@ export const About = () => {
                             <img src="img/don5.jpg" className="img-thumbnail" alt="" />
                         </div>
                         <div className="col-lg-7 pt-4 pt-lg-0 content">
-
-                            <p className="fst-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.
-                            </p>
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <ul>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                                    </ul>
-                                </div>
-                                <div className="col-lg-6">
-                                    <ul>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <h4 className='about-h4'>¿Quién fue el Padre Jorge Bissoni?</h4>
                             <p>
-                                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                                El Padre Jorge Bissoni fue un destacado sacerdote nacido el 12 de mayo de 1940 en un pequeño pueblo del sur de Italia.
+                                A pesar de haber vivido una infancia marcada por las devastaciones de la Segunda Guerra Mundial,
+                                sintió desde temprana edad su vocación al sacerdocio y se unió al seminario menor a los 10 años,
+                                fue ordenado sacerdote en 28 de junio de 1959, a la temprana edad de 19 años.
                             </p>
 
+                            <p>
+                                Su devoción lo llevó a convertirse en misionero, y se dirigió a América Latina,
+                                específicamente a Cartago, Colombia, donde comenzó su labor como sacerdote.
+                                Tras 12 años de servicio en esa comunidad, fue enviado a continuar su misión en Venezuela,
+                                estableciéndose en la parroquia 10 de Marzo en Pariata, La Guaira. Durante su tiempo en esta parroquia,
+                                promovió la devoción a la Virgen María, la ayuda a los necesitados fundando el dispensario de Pariata,
+                                que ha servido a la comunidad desde sus inicios.
+                            </p>
 
+                            <p>
+                                Luego de 14 años en la Parroquia 10 de Marzo,
+                                fue llamado a servir en la Diócesis de Carúpano,
+                                específicamente en la Parroquia Inmaculada Concepción de Güira de la Costa,
+                                donde permaneció durante 11 años, llevando el evangelio y estableciendo el Centro de Formación San Antonio (CFSA),
+                                que brindaba educación a jóvenes y adultos.
+                            </p>
+                        </div>
 
+                        <div className='col-lg-12 pt-4 pt-lg-0 content mt-3'>
 
+                            <p>
+                                Posteriormente, continuó su labor misionera en la parroquia San Rafael Arcángel de Playa Grande,
+                                ofreciendo apoyo espiritual y ayuda a los más vulnerables,
+                                incluyendo a "Los Predilecto del Señor", un proyecto que llevó a cabo en cada parroquia donde prestó
+                                servicio como sacerdote.
+                            </p>
+
+                            <p>
+                                Durante sus 23 años de servicio en la Diócesis de Carúpano,
+                                el Padre Jorge Bissoni promovió la realización de numerosas obras,
+                                entre las que se destaca la Casa de la Caridad Santa Ana, que en sus inicios  sirvió como refugio para los
+                                forasteros necesitados de un techo mientras sus familiares estaban en centros de salud.
+                            </p>
+
+                            <p>
+                                Su humildad y valentía lo llevaron a difundir el evangelio,
+                                del cual estaba profundamente enamorado. A través de extensas jornadas de oración
+                                fomentó en su feligresía la devoción a la Virgen María en sus advocaciones de Nuestra Señora del Valle
+                                y Nuestra Señora de los Favores. cada 8 de septiembre la  comunidad se reunia  con alegría
+                                para escuchar la palabra de Dios que él proclamaba en su Eucaristía.
+                            </p>
+
+                            <p>
+                                Sin embargo, su trágico final llegó de manera abrupta el 17 de septiembre de 2023,
+                                en un fatídico accidente de tránsito, en la carretera nacional Carúpano - Cumaná,
+                                sector Pozo Colorado, mientras iba a la comunidad de Guiria de la Playa a oficiar una Santa Eucaristía.
+                                Su luz terrenal se apagó, dejando a quienes lo conocieron con un profundo lamento
+                                y un vacío que solo el recuerdo de su inquebrantable fe y dedicación puede llenar.
+
+                            </p>
+
+                            <p>
+                                El Padre Jorge Bissoni dejó un legado imborrable que perdura en todas las comunidades
+                                a las que dedicó su vida. Su obra trasciende el tiempo y el espacio,
+                                impactando positivamente a quienes tuvieron la fortuna de cruzar su camino. Fue,
+                                sin duda, un hombre de Dios en la tierra, un ejemplo vivo de humildad y servicio desinteresado.
+                                Como nos lo recuerda el Evangelio de Mateo 6:20, <span className='fst-italic'><b>"No acumulen para sí tesoros en la tierra,
+                                    donde la polilla y el óxido destruyen, y donde los ladrones se meten a robar. Más bien,
+                                    acumulen para sí tesoros en el cielo, donde ni la polilla ni el óxido carcomen, ni los ladrones se meten a robar".</b></span>
+                            </p>
+
+                            <p>
+                                Sus tesoros no se acumularon en la tierra, sino en los corazones de aquellos que lo conocieron
+                                y en el cielo, donde su obra eterna resplandece como una luz que nunca se apaga.
+                            </p>
+
+                            <div className='cita-text'>
+                                <p className="fst-italic">
+                                    “El cristiano esta hecho para dar, no para recibir.” <br />
+                                    Padre Jorge Bissoni
+                                </p>
+                            </div>
                         </div>
                     </div>
 
