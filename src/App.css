@@ -1423,6 +1423,10 @@ h4 {
   .ul-solicitud {
     width: 90%;
   }
+
+  .d-movil-none {
+    display: none;
+  }
 }
 
 .container_sleder {
@@ -1432,6 +1436,8 @@ h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .slide {
@@ -1477,4 +1483,14 @@ h4 {
 
 .color-icons {
   color: #753fcc;
+}
+
+.text-justificado {
+  text-align: justify !important;
+}
+
+.services .icon-box {
+
+  padding: 10px 20px 20px 20px;
+
 }

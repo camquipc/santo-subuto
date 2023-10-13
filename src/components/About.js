@@ -15,7 +15,7 @@ export const About = () => {
                         <div className="col-lg-5">
                             <img src="img/don5.jpg" className="img-thumbnail" alt="" />
                         </div>
-                        <div className="col-lg-7 pt-4 pt-lg-0 content">
+                        <div className="col-lg-7 pt-4 pt-lg-0 content text-justificado">
                             <h4 className='about-h4'>¿Quién fue el Padre Jorge Bissoni?</h4>
                             <p>
                                 El Padre Jorge Bissoni fue un destacado sacerdote nacido el 12 de mayo de 1940 en un pequeño pueblo del sur de Italia.
@@ -42,7 +42,7 @@ export const About = () => {
                             </p>
                         </div>
 
-                        <div className='col-lg-12 pt-4 pt-lg-0 content mt-3'>
+                        <div className='col-lg-7 pt-3 pt-lg-0 content mt-2 text-justificado'>
 
                             <p>
                                 Posteriormente, continuó su labor misionera en la parroquia San Rafael Arcángel de Playa Grande,
@@ -96,6 +96,10 @@ export const About = () => {
                                     Padre Jorge Bissoni
                                 </p>
                             </div>
+                        </div>
+
+                        <div className="col-lg-5 mt-2">
+                            <img src="img/don26.jpeg" className="img-thumbnail" alt="" />
                         </div>
                     </div>
 

@@ -38,7 +38,7 @@ export default function MenuMovil() {
             <Nav.Link href="#videos">
               <BsFillCaretRightSquareFill />
             </Nav.Link>
-            <Nav.Link href="#testimonio">
+            <Nav.Link href="#testimonio" className="d-movil-none">
               <BsCameraVideoFill />
             </Nav.Link>
           </Nav>

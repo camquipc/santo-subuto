@@ -3,7 +3,7 @@ import React from 'react'
 export default function Testimonio() {
     return (
         <>
-            <section id="testimonio" className="resume">
+            <section id="testimonio" className="resume d-movil-none">
                 <div className="container" data-aos="fade-up">
                     <div className="section-title">
                         <h2>Testimonios</h2>
