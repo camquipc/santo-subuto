@@ -90,18 +90,18 @@ const ProcesoSanto = () => {
           <ul className="ul-solicitud">
             <li>
               <p>
-                <BsCheckCircleFill /> <b>Elaboración de la carta al Obispo para solicitarle el inicio del proceso de la causa de canonización.</b>
+                <span className="color-icons"><BsCheckCircleFill /></span> <b>Elaboración de la carta al Obispo para solicitarle el inicio del proceso de la causa de canonización.</b>
               </p>
             </li>
             <li>
               <p>
-                <BsCheckCircleFill /> <b>Iniciar  la recoleción de firmas durantes estos 40 dias (El cuarentón), las cuales serán entregadas al Obispo y
+                <span className="color-icons"><BsCheckCircleFill /></span> <b>Iniciar  la recoleción de firmas durantes estos 40 dias (El cuarentón), las cuales serán entregadas al Obispo y
                   complementarán el expediente de la causa.</b>
               </p>
             </li>
             <li>
               <p>
-                <BsCheckCircleFill /> <b> Dar inicio a la recoleción de testimonios, que serán parte del expediente para su causa.</b>
+                <span className="color-icons"><BsCheckCircleFill /></span> <b> Dar inicio a la recoleción de testimonios, que serán parte del expediente para su causa.</b>
               </p>
             </li>
           </ul>
