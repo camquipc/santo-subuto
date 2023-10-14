@@ -9,7 +9,8 @@ const ProcesoSanto = () => {
         <div className="section-title">
           <h2>La Canonización</h2>
           <h4>
-            El proceso de canonización implica una serie de etapas que conducen a la proclamación de una persona como santa.
+            El proceso de canonización implica una serie de etapas que conducen
+            a la proclamación de una persona como santa.
           </h4>
         </div>
 
@@ -26,8 +27,8 @@ const ProcesoSanto = () => {
                 <a href="">Siervo de Dios</a>
               </h4>
               <p>
-                La congregación para la causa de los santos examina y
-                aprueba el informe.
+                La congregación para la causa de los santos examina y aprueba el
+                informe.
               </p>
             </div>
           </div>
@@ -44,12 +45,10 @@ const ProcesoSanto = () => {
                 <a href="">Venerable</a>
               </h4>
               <p>
-                La santa sede reconoce que la persona vivió virtudes
-                heroicas.
+                La santa sede reconoce que la persona vivió virtudes heroicas.
               </p>
             </div>
           </div>
-
 
           <div
             className="col-sm-12 col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
@@ -90,27 +89,44 @@ const ProcesoSanto = () => {
           <ul className="ul-solicitud">
             <li>
               <p>
-                <span className="color-icons"><BsCheckCircleFill /></span> <b>Elaboración de la carta al Obispo para solicitarle el inicio del proceso de la causa de canonización.</b>
+                <span className="color-icons">
+                  <BsCheckCircleFill />
+                </span>{" "}
+                <b>
+                  Elaboración de la carta al Obispo para solicitarle el inicio
+                  del proceso de la causa de canonización.
+                </b>
               </p>
             </li>
             <li>
               <p>
-                <span className="color-icons"><BsCheckCircleFill /></span> <b>Iniciar  la recoleción de firmas durantes estos 40 dias (El cuarentón), las cuales serán entregadas al Obispo y
-                  complementarán el expediente de la causa.</b>
+                <span className="color-icons">
+                  <BsCheckCircleFill />
+                </span>{" "}
+                <b>
+                  Iniciar la recoleción de firmas durantes estos 40 días (El
+                  cuarentón), las cuales serán entregadas al Obispo y
+                  complementarán el expediente de la causa.
+                </b>
               </p>
             </li>
             <li>
               <p>
-                <span className="color-icons"><BsCheckCircleFill /></span> <b> Dar inicio a la recoleción de testimonios, que serán parte del expediente para su causa.</b>
+                <span className="color-icons">
+                  <BsCheckCircleFill />
+                </span>{" "}
+                <b>
+                  {" "}
+                  Dar inicio a la recoleción de testimonios, que serán parte del
+                  expediente para su causa.
+                </b>
               </p>
             </li>
           </ul>
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 
 export default ProcesoSanto;
-
-

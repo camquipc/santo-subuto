@@ -1,74 +1,98 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export const Galeria = () => {
-    const [banners, setBanners] = useState([{
-        "id": "1",
-        "image": "img/don5.jpg"
+  const [banners, setBanners] = useState([
+    {
+      id: "1",
+      image: "img/don5.jpg",
     },
     {
-        "id": "7",
-        "image": "img/don4.png"
+      id: "7",
+      image: "img/don4.png",
     },
     {
-        "id": "2",
-        "image": "img/don.jpg"
+      id: "2",
+      image: "img/don.jpg",
     },
     {
-        "id": "4",
-        "image": "img/don2.jpeg"
+      id: "4",
+      image: "img/don2.jpeg",
     },
     {
-        "id": "3",
-        "image": "img/don1.jpg"
+      id: "3",
+      image: "img/don1.jpg",
     },
     {
-        "id": "5",
-        "image": "img/don6.jpg"
-    }, {
-        "id": "8",
-        "image": "img/don4.png"
-    }, {
-        "id": "10",
-        "image": "img/don11.jpg"
-    }, {
-        "id": "9",
-        "image": "img/don23.jpeg"
-    }, {
-        "id": "11",
-        "image": "img/don10.jpeg"
-    }, {
-        "id": "13",
-        "image": "img/don23.jpeg"
-    }, {
-        "id": "14",
-        "image": "img/don26.jpeg"
-    }, {
-        "id": "15",
-        "image": "img/don24.jpeg"
-    }, {
-        "id": "18",
-        "image": "img/don25.jpeg"
-    }]);
-    return (
-        <>
-            <section id="galeria" className="portfolio section-bg">
-                <div className="container" data-aos="fade-up">
-                    <div className="section-title">
-                        <h2>Galería</h2>
-                        <h4>Con su testimonio de vida dio a conocer la gran humildad que lo caracterizaba, su amor a Dios y al más necesitado,quien siempre recibió de él una mano amiga.</h4>
-                    </div>
-                    <div className="galeria" data-aos="fade-up" data-aos-delay="200">
-                        {
-                            banners.map(item => {
-                                return (
-                                    <img src={item.image} className="galeria-imagen" alt="logo" key={item.id} />
-                                );
-                            })
-                        }
+      id: "5",
+      image: "img/don6.jpg",
+    },
+    {
+      id: "8",
+      image: "img/don4.png",
+    },
+    {
+      id: "10",
+      image: "img/don11.jpg",
+    },
+    {
+      id: "9",
+      image: "img/don23.jpeg",
+    },
+    {
+      id: "11",
+      image: "img/don10.jpeg",
+    },
+    {
+      id: "13",
+      image: "img/don23.jpeg",
+    },
+    {
+      id: "14",
+      image: "img/don26.jpeg",
+    },
+    {
+      id: "15",
+      image: "img/don24.jpeg",
+    },
+    {
+      id: "18",
+      image: "img/don25.jpeg",
+    },
+  ]);
+  return (
+    <>
+      <section id="galeria" className="portfolio section-bg">
+        <div className="container" data-aos="fade-up">
+          <div className="section-title">
+            <h2>Galería</h2>
+            <h4>
+              Con su testimonio de vida dio a conocer la gran humildad que lo
+              caracterizaba, su amor a Dios y al más necesitado,quien siempre
+              recibió de él una mano amiga.
+            </h4>
+          </div>
+          <div className="galeria" data-aos="fade-up" data-aos-delay="200">
+            {banners.map((item) => {
+              return (
+                <LazyLoadImage
+                  key={item.id}
+                  alt={"imagen"}
+                  src={item.image}
+                  className="galeria-imagen"
+                  effect="blur"
+                  width="100%"
+                  height="100%"
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
+//<img src={item.image} className="galeria-imagen" alt="logo" key={item.id} />;
