@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from 'react-player';
 
 export default function Videos() {
   return (
@@ -8,25 +9,12 @@ export default function Videos() {
           <div className="section-title">
             <h2>Videos</h2>
           </div>
-
           <div className="row mt-4">
             <div className="col-sm-12 col-md-6 col-lg-6">
-              <video
-                width="640"
-                height="360"
-                controls
-                className="img-thumbnail">
-                <source src="video/don2.mp4" type="video/mp4" />
-              </video>
+              <ReactPlayer url='video/don2.mp4' controls width={'100%'} />
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6">
-              <video
-                width="640"
-                height="370"
-                controls
-                className="img-thumbnail">
-                <source src="video/don1.mp4" type="video/mp4" />
-              </video>
+              <ReactPlayer url='video/don1.mp4' controls width={'100%'} />
             </div>
           </div>
         </div>

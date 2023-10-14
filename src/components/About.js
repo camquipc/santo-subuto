@@ -3,7 +3,6 @@ import React from 'react'
 export const About = () => {
     return (
         <>
-
             <section id="biografia" className="about">
                 <div className="container" data-aos="fade-up">
 
@@ -80,14 +79,16 @@ export const About = () => {
                                 a las que dedicó su vida. Su obra trasciende el tiempo y el espacio,
                                 impactando positivamente a quienes tuvieron la fortuna de cruzar su camino. Fue,
                                 sin duda, un hombre de Dios en la tierra, un ejemplo vivo de humildad y servicio desinteresado.
-                                Como nos lo recuerda el Evangelio de Mateo 6:20, <span className='fst-italic'><b>"No acumulen para sí tesoros en la tierra,
+                                Como nos lo recuerda el Evangelio de Mateo 6:20, <span className='fst-italic'><b>"No
+                                    acumulen para sí tesoros en la tierra,
                                     donde la polilla y el óxido destruyen, y donde los ladrones se meten a robar. Más bien,
-                                    acumulen para sí tesoros en el cielo, donde ni la polilla ni el óxido carcomen, ni los ladrones se meten a robar".</b></span>
+                                    acumulen para sí tesoros en el cielo, donde ni la polilla ni el óxido carcomen, ni
+                                    los ladrones se meten a robar".</b></span>
                             </p>
 
                             <p>
                                 Sus tesoros no se acumularon en la tierra, sino en los corazones de aquellos que lo conocieron
-                                y en el cielo, donde su obra eterna resplandece como una luz que nunca se apaga.
+                                y en el cielo, donde su obra eterna resplandece como una luz que nunca se apagará.
                             </p>
 
                             <div className='cita-text'>
