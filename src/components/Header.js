@@ -10,6 +10,7 @@ import {
   BsFillEnvelopeAtFill,
   BsBoxArrowUp,
 } from "react-icons/bs";
+import { FileInput } from "./FileInput";
 export default function Header() {
   return (
     <>
@@ -78,11 +79,9 @@ export default function Header() {
             </a>
           </div>
 
-          <button
-            type="button"
-            className="btn btn-primary btn-lg d-sm-block d-md-none d-lg-none">
-            Subir Testimonio
-          </button>
+          <div className=" d-sm-block d-md-none d-lg-none archivos-container">
+            <FileInput />
+          </div>
         </div>
       </section>
     </>

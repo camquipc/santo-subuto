@@ -85,6 +85,8 @@ export const Galeria = () => {
       height: "780",
     },
   ]);
+
+  const placeholderImage = "img/base.png";
   return (
     <>
       <section id="galeria" className="portfolio section-bg">
@@ -101,7 +103,7 @@ export const Galeria = () => {
             {banners.map((item) => {
               return (
                 <img
-                  src={item.image}
+                  src={item.image || placeholderImage}
                   className="galeria-imagen"
                   key={item.id}
                   loading="lazy"

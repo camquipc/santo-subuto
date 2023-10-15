@@ -1222,6 +1222,7 @@ section {
 
 .galeria-imagen {
   max-width: 100%;
+  background: #fff8f85e;
   margin-bottom: 0.5em;
   display: block;
   outline: 2px solid #fff;
@@ -1235,7 +1236,9 @@ section {
 
 .archivos-container {
   padding: 5px;
-  background: #ccc;
+  display: flex;justify-content: center;
+  align-items: center;
+  
 }
 
 .archivos-container p {
@@ -1247,12 +1250,18 @@ section {
 
 }
 
-#lb-btn {
-  background: #0563bb;
-  padding: 5px;
+.lb-btn {
+  background: #300a6f;
+  padding: 10px 30px;
+  line-height: 2;
   cursor: pointer;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 30px;
+}
+
+.lb-btn:hover {
+  background: #310a6f93;
+
 }
 
 .archivos-container input {
