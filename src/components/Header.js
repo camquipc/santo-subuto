@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import {
   BsFillHouseFill,
   BsCameraVideoFill,
@@ -43,7 +42,7 @@ export default function Header() {
                 <BsFillCaretRightSquareFill /> <span>Videos</span>
               </a>
             </li>
-            <li >
+            <li>
               <a href="#testimonio" className="nav-link scrollto">
                 <BsCameraVideoFill /> <span>Testimonio</span>
               </a>
@@ -55,7 +54,7 @@ export default function Header() {
       <section id="hero" className="d-flex flex-column justify-content-center">
         <div className="container z-inde">
           <h1>Padre Jorge Bissoni</h1>
-          <h1>Sacerdote de la Caridad</h1>
+          <h1 className="mt-3">Sacerdote de la Caridad</h1>
           <p className="col-sm-12 col-lg-7 col-md-12">
             "Los santos no sólo están en estampitas, también están en las
             calles, donando su vida por amor a los demás. Si eso no es ser

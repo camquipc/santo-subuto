@@ -39,7 +39,7 @@ const ProcesoSanto = () => {
             data-aos-delay="300">
             <div className="icon-box iconbox-pink">
               <div className="icon">
-                <img className="pc-icon" src="img/pc3.png" />
+                <img className="pc-icon" src="img/pc3.png" loading="lazy" />
               </div>
               <h4>
                 <a href="">Venerable</a>
@@ -56,7 +56,7 @@ const ProcesoSanto = () => {
             data-aos-delay="100">
             <div className="icon-box iconbox-yellow">
               <div className="icon">
-                <img className="pc-icon" src="img/pc4.png" />
+                <img className="pc-icon" src="img/pc4.png" loading="lazy" />
               </div>
               <h4>
                 <a href="">Beatificación</a>
@@ -71,7 +71,7 @@ const ProcesoSanto = () => {
             data-aos-delay="200">
             <div className="icon-box iconbox-red">
               <div className="icon">
-                <img className="pc-icon" src="img/pc5.png" />
+                <img className="pc-icon" src="img/pc5.png" loading="lazy" />
               </div>
               <h4>
                 <a href="">Canonización</a>
