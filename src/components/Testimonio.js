@@ -1,10 +1,11 @@
 import React from "react";
-import { FileInput } from "./FileInput";
+import { FileUpload } from "./FileUpload";
+
 
 export default function Testimonio() {
   return (
     <>
-      <section id="testimonio" className="resume d-movil-none">
+      <section id="testimonio" className="resume">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2>Testimonios</h2>
@@ -15,8 +16,8 @@ export default function Testimonio() {
           </div>
           <div className="row mb-4">
             <div className="">
-              <div className="col-sm-12 col-lg-8 mt-5 mt-lg-0 m-sm-auto mt-sm-0 m-md-auto mt-md-0 m-lg-auto archivos-container">
-                <FileInput />
+              <div className="col-sm-12 col-lg-8 mt-5 mt-lg-0 m-sm-auto mt-sm-0 m-md-auto mt-md-0 m-lg-auto">
+                <FileUpload />
               </div>
             </div>
           </div>

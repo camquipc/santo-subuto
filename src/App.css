@@ -1515,3 +1515,28 @@ h4 {
 .progress-bar {
   background: #753fcc;
 }
+
+.btn-subir-icon {
+  border: none;
+  background: #fff;
+  color: #753fcc;
+}
+
+.btn-subir-icon>svg {
+  width: 5em;
+  height: 5em;
+}
+
+.div-previe-file {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.limpiar-file {
+  color: red;
+  cursor: pointer;
+  padding: 0.7em;
+}

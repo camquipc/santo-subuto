@@ -2,8 +2,10 @@ import React, { useState } from "react";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import FsLightbox from "fslightbox-react";
 
 export const Galeria = () => {
+  const [toggler, setToggler] = useState(false);
   const [banners, setBanners] = useState([
     {
       id: "1",
@@ -99,12 +101,12 @@ export const Galeria = () => {
               recibió de él una mano amiga.
             </h4>
           </div>
-          <div className="galeria" data-aos="fade-up" data-aos-delay="200">
+          <div className="galeria " data-aos="fade-up" data-aos-delay="200">
             {banners.map((item) => {
               return (
                 <img
                   src={item.image || placeholderImage}
-                  className="galeria-imagen"
+                  className="galeria-imagen w-100"
                   key={item.id}
                   loading="lazy"
                 />
@@ -116,5 +118,8 @@ export const Galeria = () => {
     </>
   );
 };
+
+
+
 
 //<img src={item.image} className="galeria-imagen" alt="logo" key={item.id} />;
