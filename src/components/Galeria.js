@@ -106,7 +106,7 @@ export const Galeria = () => {
               return (
                 <img
                   src={item.image || placeholderImage}
-                  className="galeria-imagen w-100"
+                  className="galeria-imagen w-100 h-100"
                   key={item.id}
                   loading="lazy"
                 />
@@ -121,5 +121,3 @@ export const Galeria = () => {
 
 
 
-
-//<img src={item.image} className="galeria-imagen" alt="logo" key={item.id} />;

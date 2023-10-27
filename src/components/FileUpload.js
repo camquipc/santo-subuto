@@ -4,6 +4,7 @@ import { BeatLoader } from "react-spinners";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { BsFillTrashFill, BsFileEarmarkArrowUpFill } from "react-icons/bs";
+import swal from "sweetalert";
 
 const URL_UPLOAD = "http://192.168.0.101:5000/upload";
 
@@ -12,10 +13,7 @@ export const FileUpload = () => {
   const [progres, setProgres] = useState(false);
   const [urlVideo, setUrlVideo] = useState(null);
   const fileInputRef = useRef(null);
-  const [isErrorType, setIsErrorType] = useState(false);
-  const [isErrorSize, setIsErrorSize] = useState(false);
-  const [errorMsgType, setErrorMsgType] = useState("");
-  const [errorMsgSize, setErrorMsgSize] = useState("");
+
   const TYPE_VIDEO_PERMITIDO = ["video/mp4"];
   const MAX_SIZE_PERMITIDO = 20000;
 
@@ -30,14 +28,14 @@ export const FileUpload = () => {
     const fileUpload = event.target.files[0];
     const url = URL.createObjectURL(fileUpload);
     if (!TYPE_VIDEO_PERMITIDO.includes(fileUpload?.type)) {
-      setIsErrorType(true);
-      setErrorMsgType("Solo se permite formato de video en mp4.");
+
+      swal("Solo se permite video en formato .mp4", " ", "warning");
       return;
     }
 
     if ((fileUpload?.size / 1024) > MAX_SIZE_PERMITIDO) {
-      setIsErrorSize(true);
-      setErrorMsgSize("Tamaño máximo permitido es de  20Mb.");
+
+      swal("Tamaño máximo permitido es de  20Mb", " ", "warning");
       return;
     }
 
@@ -47,7 +45,7 @@ export const FileUpload = () => {
 
   const handleUpload = () => {
     if (selectedFile === null) {
-      alert("Falta el testimonio!!");
+      swal("Falta el testimonio!!", " ", "warning");
       return;
     } else {
       setProgres(true);
@@ -56,13 +54,15 @@ export const FileUpload = () => {
       axios
         .post(URL_UPLOAD, formData)
         .then((response) => {
-          alert("Gracias por tu testimonio!")
+          alert()
+          swal("Gracias por tu testimonio!", " ", "success");
           setTimeout(() => {
             setSelectedFile(null);
           }, 1000)
         })
         .catch((error) => {
           console.log(error);
+          swal("lo sentimos ocurrió un error, por favor inténtalo más tarde!", " ", "error");
         }).finally(() => {
           setSelectedFile(null);
           setProgres(false)
@@ -73,8 +73,7 @@ export const FileUpload = () => {
   return (
 
     <Card className="text-center">
-      {isErrorType && (<span className="text-danger mt-2">{errorMsgType}</span>)}
-      {isErrorSize && (<span className="text-danger mt-2">{errorMsgSize}</span>)}
+
       <Card.Body>
 
         {(selectedFile === null) && (
@@ -108,7 +107,7 @@ export const FileUpload = () => {
 
       </Card.Body>
       <Card.Footer >
-        <p>Solo vídeo en formato (Mp4) y tamaño máximo (20Mb) permitido.</p>
+        <p>Solo vídeo en formato (.Mp4) y tamaño máximo (20Mb) permitido.</p>
       </Card.Footer>
     </Card>
 
