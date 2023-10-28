@@ -21,7 +21,7 @@ export const About = () => {
               />
             </div>
             <div className="col-lg-7 pt-4 pt-lg-0 content text-justificado">
-              <h4 className="about-h4">¿Quién fue el Padre Jorge Bissoni?</h4>
+              <h4 className="about-h4 t-titulo-b">¿Quién fue el Padre Jorge Bissoni?</h4>
               <p className="fst-italic autor">
                 Por Francisco Campos, Rosalis Rosal
               </p>

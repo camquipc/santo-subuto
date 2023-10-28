@@ -8,6 +8,7 @@ import ProcesoSanto from "./ProcesoSanto";
 import MenuMovil from "./MenuMovil";
 import Videos from "./Videos";
 import Banner from "./Banner";
+import MasFotos from "./MasFotos";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <ProcesoSanto />
       <About />
       <Galeria />
+      <MasFotos />
       <Videos />
       <Testimonio />
       <Footer />

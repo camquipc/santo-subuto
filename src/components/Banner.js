@@ -17,7 +17,7 @@ export default function Banner() {
     {
       id: "4",
       title: "Padre Peregrino ",
-      body: "Nunca detuvo son andar y a maria nos enseño a venerar",
+      body: "Nunca detuvo son andar y a María nos enseño a venerar",
     },
     {
       id: "5",

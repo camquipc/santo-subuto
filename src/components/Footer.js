@@ -11,7 +11,13 @@ export const Footer = () => {
           <strong>
             <span>
               {" "}
-              <BsFillEnvelopeFill /> ssubito47@gmail.com
+              <BsFillEnvelopeFill /> santosubito@santo-subito.org
+            </span>
+          </strong>
+
+          <strong>
+            <span>
+
             </span>
           </strong>
 

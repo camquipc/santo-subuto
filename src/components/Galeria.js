@@ -97,7 +97,7 @@ export const Galeria = () => {
             <h2>Galería</h2>
             <h4>
               Con su testimonio de vida dio a conocer la gran humildad que lo
-              caracterizaba, su amor a Dios y al más necesitado,quien siempre
+              caracterizaba, su amor a Dios y al más necesitado, quien siempre
               recibió de él una mano amiga.
             </h4>
           </div>

@@ -114,9 +114,8 @@ const ProcesoSanto = () => {
               <p>
                 <span className="color-icons">
                   <BsCheckCircleFill />
-                </span>{" "}
+                </span>{""}
                 <b>
-                  {" "}
                   Dar inicio a la recoleción de testimonios, que serán parte del
                   expediente para su causa.
                 </b>

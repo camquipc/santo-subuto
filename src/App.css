@@ -1392,7 +1392,7 @@ h4 {
   width: 50%;
   margin: 0 auto;
   color: #45505b;
-  text-align: left;
+  text-align: justify;
   list-style: none;
   padding: 0px;
 }
@@ -1495,6 +1495,7 @@ h4 {
 
 .color-icons {
   color: #753fcc;
+  margin: 3px;
 }
 
 .text-justificado {
@@ -1543,4 +1544,14 @@ h4 {
 
 .autor {
   font-size: 14px;
+}
+
+.t-titulo-b {
+  text-align: left !important;
+}
+
+.div-mas-fotos {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }

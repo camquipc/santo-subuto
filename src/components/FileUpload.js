@@ -70,48 +70,54 @@ export const FileUpload = () => {
   };
 
   return (
+    <>
+      <Card className="text-center">
 
-    <Card className="text-center">
+        <Card.Body>
 
-      <Card.Body>
+          {(selectedFile === null) && (
+            <div className="mb-4">
+              <button className="btn-subir-icon" title="Seleccionar testimonio"
+                onClick={(selectedFile === null) ? handleClick : handleUpload}>
+                <BsFileEarmarkArrowUpFill />
+              </button>
+              <input
+                type="file"
+                name="archivos"
+                ref={fileInputRef}
+                onChange={handleChange}
+                style={{ display: 'none' }}
+              />
+            </div>
+          )
+          }
 
-        {(selectedFile === null) && (
-          <div className="mb-4">
-            <button className="btn-subir-icon" title="Seleccionar testimonio"
-              onClick={(selectedFile === null) ? handleClick : handleUpload}>
-              <BsFileEarmarkArrowUpFill />
-            </button>
-            <input
-              type="file"
-              name="archivos"
-              ref={fileInputRef}
-              onChange={handleChange}
-              style={{ display: 'none' }}
-            />
-          </div>
-        )
-        }
+          {(selectedFile !== null) &&
+            <div className="div-previe-file">
+              <video className="img-thumbnail" src={urlVideo}></video>
+              {progres ? '' :
 
-        {(selectedFile !== null) &&
-          <div className="div-previe-file">
-            <video className="img-thumbnail" src={urlVideo}></video>
-            {progres ? '' :
+                <p>{selectedFile.name} <span className="limpiar-file" onClick={() => setSelectedFile(null)}><BsFillTrashFill /></span></p>
+              }
+            </div>
+          }
 
-              <p>{selectedFile.name} <span className="limpiar-file" onClick={() => setSelectedFile(null)}><BsFillTrashFill /></span></p>
-            }
-          </div>
-        }
+          <BeatLoader size={15} loading={progres} color={'#753fcc'} />
 
-        <BeatLoader size={15} loading={progres} color={'#753fcc'} />
+          <Button variant="btn btn-sm lb-btn mb-2" disabled={(progres) || (selectedFile === null)}
+            onClick={handleUpload}>Enviar Testimonio</Button>
 
-        <Button variant="btn btn-sm lb-btn mb-2" disabled={(progres) || (selectedFile === null)}
-          onClick={handleUpload}>Enviar Testimonio</Button>
+        </Card.Body>
+        <Card.Footer >
+          <p>Solo vídeo en formato (.mp4) y tamaño máximo (20mb) permitido.</p>
+        </Card.Footer>
 
-      </Card.Body>
-      <Card.Footer >
-        <p>Solo vídeo en formato (.mp4) y tamaño máximo (20mb) permitido.</p>
-      </Card.Footer>
-    </Card>
+      </Card>
+      <p className="text-center mt-2">
+        Los testimonios serán evaluados por una comisión designada por el obispo de la Diócesis de Carúpano, con el propósito de verificar su autenticidad.
+      </p>
+
+    </>
 
   );
 };
