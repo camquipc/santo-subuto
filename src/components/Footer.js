@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import { BsFillEnvelopeFill, BsFillFileEarmarkArrowDownFill } from "react-icons/bs";
 export const Footer = () => {
   return (
@@ -17,7 +18,7 @@ export const Footer = () => {
           <strong>
             <span>
               {"  "}
-              <a href="#"><BsFillFileEarmarkArrowDownFill /> Descargar Biografía</a>
+              <a href="descargas/doc.pdf" download={"padre_jorge_resumen.pdf"}><BsFillFileEarmarkArrowDownFill /> Descargar Biografía</a>
             </span>
           </strong>
         </div>

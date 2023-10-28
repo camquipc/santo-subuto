@@ -1,5 +1,7 @@
 import React from "react";
 
+import { BsFillFileEarmarkArrowDownFill } from "react-icons/bs";
+
 export const About = () => {
   return (
     <>
@@ -21,7 +23,7 @@ export const About = () => {
             <div className="col-lg-7 pt-4 pt-lg-0 content text-justificado">
               <h4 className="about-h4">¿Quién fue el Padre Jorge Bissoni?</h4>
               <p className="fst-italic autor">
-                Por Campos Francisco, Rosal Rosalis
+                Por Francisco Campos, Rosalis Rosal
               </p>
               <p>
                 El Padre Jorge Bissoni fue un destacado sacerdote nacido el 12
@@ -128,10 +130,17 @@ export const About = () => {
             <div className="col-lg-5 mt-2">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/santo-subito-images.appspot.com/o/images%2Fdon26.jpeg?alt=media&token=97c2fbee-bf9f-42ca-8e11-f0d79c220283&_gl=1*1u7rlu1*_ga*MTc0NTUzNjEyMi4xNjkxMDkzMzQ3*_ga_CW55HF8NVT*MTY5NzQwNzY3OC43LjEuMTY5NzQwNzkyOS4yMS4wLjA."
-                className="img-thumbnail w-100 h-100"
+                className="img-thumbnail w-100 h-100 mb-3"
                 alt=""
                 loading="lazy"
               />
+
+              <strong >
+                <span className="mt-3">
+                  {"  "}
+                  <a href="descargas/doc.pdf" download={"padre_jorge_resumen.pdf"} style={{ color: "#fff" }}><BsFillFileEarmarkArrowDownFill /> Descargar Biografía</a>
+                </span>
+              </strong>
             </div>
           </div>
         </div>
