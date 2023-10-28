@@ -1427,19 +1427,7 @@ h4 {
 
 
 
-@media (max-width: 465px) {
-  .sus-frases-text {
-    font-size: 1.6em;
-  }
 
-  .ul-solicitud {
-    width: 90%;
-  }
-
-  .d-movil-none {
-    display: none;
-  }
-}
 
 .container_sleder {
   width: 100%;
@@ -1554,4 +1542,27 @@ h4 {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+
+@media (max-width: 465px) {
+  .sus-frases-text {
+    font-size: 1.6em;
+  }
+
+  .ul-solicitud {
+    width: 90%;
+  }
+
+  .d-movil-none {
+    display: none;
+  }
+
+  .div-mas-fotos {
+    width: 100%;
+  }
+
+  .div-mas-fotos>h4 {
+    font-size: 1.2em;
+  }
 }
