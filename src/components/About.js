@@ -20,6 +20,9 @@ export const About = () => {
             </div>
             <div className="col-lg-7 pt-4 pt-lg-0 content text-justificado">
               <h4 className="about-h4">¿Quién fue el Padre Jorge Bissoni?</h4>
+              <p className="fst-italic autor">
+                Por Campos Francisco, Rosal Rosalis
+              </p>
               <p>
                 El Padre Jorge Bissoni fue un destacado sacerdote nacido el 12
                 de mayo de 1940 en un pequeño pueblo del sur de Italia. A pesar

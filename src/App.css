@@ -1540,3 +1540,7 @@ h4 {
   cursor: pointer;
   padding: 0.7em;
 }
+
+.autor {
+  font-size: 12px;
+}

@@ -54,7 +54,6 @@ export const FileUpload = () => {
       axios
         .post(URL_UPLOAD, formData)
         .then((response) => {
-          alert()
           swal("Gracias por tu testimonio!", " ", "success");
           setTimeout(() => {
             setSelectedFile(null);
@@ -96,7 +95,10 @@ export const FileUpload = () => {
         {(selectedFile !== null) &&
           <div className="div-previe-file">
             <video className="img-thumbnail" src={urlVideo}></video>
-            <p>{selectedFile.name} <span className="limpiar-file" onClick={() => setSelectedFile(null)}><BsFillTrashFill /></span></p>
+            {progres ? '' :
+
+              <p>{selectedFile.name} <span className="limpiar-file" onClick={() => setSelectedFile(null)}><BsFillTrashFill /></span></p>
+            }
           </div>
         }
 
@@ -107,7 +109,7 @@ export const FileUpload = () => {
 
       </Card.Body>
       <Card.Footer >
-        <p>Solo vídeo en formato (.Mp4) y tamaño máximo (20Mb) permitido.</p>
+        <p>Solo vídeo en formato (.mp4) y tamaño máximo (20mb) permitido.</p>
       </Card.Footer>
     </Card>
 
