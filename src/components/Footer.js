@@ -5,7 +5,7 @@ import { BsFillEnvelopeFill, BsFillFileEarmarkArrowDownFill } from "react-icons/
 export const Footer = () => {
   return (
     <footer id="footer" className="mt-5">
-      <div className="container">
+      {/* <div className="container">
         <div className="copyright">
 
           <strong>
@@ -28,14 +28,13 @@ export const Footer = () => {
             </span>
           </strong>
         </div>
-      </div>
+      </div>*/}
       <div className="container">
         <div className="copyright">
-          &copy;
+
           <strong>
             <span>
-              {" "}
-              2023, Desarrollado por Francisco Campos
+              Copyright &copy; 2023 Francisco Campos
             </span>
           </strong>
         </div>

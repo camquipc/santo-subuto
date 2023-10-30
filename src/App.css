@@ -1255,7 +1255,7 @@ section {
 .lb-btn {
   background: #300a6f;
   padding: 10px 30px;
-  line-height: 2;
+  line-height: 1;
   cursor: pointer;
   color: #fff;
   border-radius: 30px;
@@ -1512,8 +1512,8 @@ h4 {
 }
 
 .btn-subir-icon>svg {
-  width: 5em;
-  height: 5em;
+  width: 1em;
+  height: 1em;
 }
 
 .div-previe-file {
@@ -1564,5 +1564,16 @@ h4 {
 
   .div-mas-fotos>h4 {
     font-size: 1.2em;
+  }
+
+  .lb-btn {
+    width: 100%;
+  }
+
+  .div-btn-ad {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }

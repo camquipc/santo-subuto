@@ -19,8 +19,8 @@ function Home() {
       <ProcesoSanto />
       <About />
       <Galeria />
-      <MasFotos />
-      <Videos />
+      {/* <MasFotos />
+      <Videos />*/}
       <Testimonio />
       <Footer />
     </>
