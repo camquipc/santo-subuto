@@ -9,7 +9,7 @@ export default function Videos() {
           <div className="section-title">
             <h2>Videos</h2>
           </div>
-          <div className="row mt-4">
+          <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <ReactPlayer
                 url="https://firebasestorage.googleapis.com/v0/b/santo-subito-images.appspot.com/o/videos%2Fdon2.mp4?alt=media&token=587dec66-75d7-4d86-9bdd-27ee3aab6db8"

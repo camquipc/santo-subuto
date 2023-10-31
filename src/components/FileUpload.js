@@ -14,9 +14,7 @@ export const FileUpload = () => {
   const [apellido, setApellido] = useState("");
   const [direccion, setDireccion] = useState("");
   const [telefono, setTelefono] = useState("");
-
   const [progres, setProgres] = useState(false);
-  //const [urlVideo, setUrlVideo] = useState(null);
   const fileInputRef = useRef(null);
 
   const TYPE_FILES_PERMITIDO = ["video/mp4", "application/pdf", "application/x-pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
@@ -93,6 +91,7 @@ export const FileUpload = () => {
       formData.append("direccion", direccion);
       formData.append("telefono", telefono);
       formData.append("archivos", selectedFile);
+
       axios
         .post(URL_UPLOAD, formData)
         .then((response) => {
@@ -122,9 +121,8 @@ export const FileUpload = () => {
   return (
     <>
       <Card >
-
         <Card.Body>
-          <p className="h4">Formulario de testimonio</p>
+          <p className="h4">Formulario para testimonio</p>
           <input type="text" className="form-control mt-3 mb-3" name="nombre" placeholder="Nombre"
             value={nombre}
             onChange={handleChangeNombre} />

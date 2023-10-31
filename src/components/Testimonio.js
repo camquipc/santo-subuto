@@ -5,7 +5,7 @@ import { FileUpload } from "./FileUpload";
 export default function Testimonio() {
   return (
     <>
-      <section id="testimonio" className="resume">
+      <section id="testimonio" className="resume testimonio-new">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2>Testimonios</h2>

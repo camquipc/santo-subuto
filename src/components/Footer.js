@@ -4,7 +4,7 @@ import React from "react";
 import { BsFillEnvelopeFill, BsFillFileEarmarkArrowDownFill } from "react-icons/bs";
 export const Footer = () => {
   return (
-    <footer id="footer" className="mt-5">
+    <footer id="footer">
       {/* <div className="container">
         <div className="copyright">
 
