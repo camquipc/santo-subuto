@@ -6,7 +6,9 @@ import Card from "react-bootstrap/Card";
 import { BsFillTrashFill, BsFileEarmarkArrowUpFill } from "react-icons/bs";
 import swal from "sweetalert";
 
-const URL_UPLOAD = "https://api-santo-subito.vercel.app/upload";
+const URL_UPLOAD = "https://api-santo-subito.vercel.app/upload"; //https://api-santo-subito.vercel.app/upload
+
+const URL_SAVE_DATA_BASE = "https://santo-subito.org/api/api.php"; //"https://santo-subito.org/api/api.php"
 
 export const FileUpload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -69,7 +71,7 @@ export const FileUpload = () => {
     //setUrlVideo(url);
   };
 
-  const handleUpload = () => {
+  const handleUpload = async () => {
     if (selectedFile === null) {
       swal("Falta el testimonio!!", " ", "warning");
       return;
@@ -83,42 +85,43 @@ export const FileUpload = () => {
       swal("El direccion es requerida", " ", "warning");
       return;
     } else {
-      setProgres(true);
-      const formData = new FormData();
-      formData.append("nombre", nombre);
-      formData.append("apellido", apellido);
-      formData.append("direccion", direccion);
-      formData.append("telefono", telefono);
-      formData.append("archivos", selectedFile);
+      try {
+        setProgres(true);
+        //send file to service vercel
+        const formData = new FormData();
+        formData.append("archivos", selectedFile);
 
-      axios
-        .post(URL_UPLOAD, formData)
-        .then((response) => {
-          swal("Gracias por tu testimonio!", " ", "success");
-          setTimeout(() => {
-            setSelectedFile(null);
-            setNombre("");
-            setApellido("");
-            setDireccion("");
-            setTelefono("");
-          }, 1000);
-        })
-        .catch((error) => {
-          console.log(error);
-          swal(
-            "lo sentimos ocurrió un error, por favor inténtalo más tarde!",
-            " ",
-            "error"
-          );
-        })
-        .finally(() => {
-          setSelectedFile(null);
-          setNombre("");
-          setApellido("");
-          setDireccion("");
-          setTelefono("");
-          setProgres(false);
-        });
+        //request 01
+        const response_file = await axios.post(URL_UPLOAD, formData);
+
+        //request 02
+        const formDataToSave = new FormData();
+        formDataToSave.append("nombre", nombre);
+        formDataToSave.append("apellido", apellido);
+        formDataToSave.append("direccion", direccion);
+        formDataToSave.append("telefono", telefono);
+        formDataToSave.append("url", response_file?.data?.data_url);
+        formDataToSave.append("minetype", selectedFile.type);
+        formDataToSave.append("add_testinonio", "ok");
+
+        await axios.post(URL_SAVE_DATA_BASE, formDataToSave);
+
+        swal("Gracias por tu testimonio!", " ", "success");
+      } catch (error) {
+        console.log(error);
+        swal(
+          "lo sentimos ocurrió un error, por favor inténtalo más tarde!",
+          " ",
+          "error"
+        );
+      } finally {
+        setSelectedFile(null);
+        setNombre("");
+        setApellido("");
+        setDireccion("");
+        setTelefono("");
+        setProgres(false);
+      }
     }
   };
 
@@ -127,7 +130,9 @@ export const FileUpload = () => {
       <Card>
         <Card.Body>
           <p className="h4">Formulario para testimonio</p>
-          <h6>(*) campos requeridos...</h6>
+          <p className="h6" style={{ color: "red" }}>
+            (*) campos requeridos...
+          </p>
           <input
             type="text"
             className="form-control mt-3 mb-3"
