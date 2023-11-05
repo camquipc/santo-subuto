@@ -84,6 +84,9 @@ export const FileUpload = () => {
     } else if (direccion === "") {
       swal("El direccion es requerida", " ", "warning");
       return;
+    } else if (telefono === "") {
+      swal("El teléfono es requerido", " ", "warning");
+      return;
     } else {
       try {
         setProgres(true);
@@ -161,7 +164,7 @@ export const FileUpload = () => {
             type="text"
             className="form-control mb-3"
             name="telefono"
-            placeholder="Teléfono"
+            placeholder="Teléfono (*)"
             value={telefono}
             onChange={handleChangeTelefono}
           />

@@ -59,7 +59,7 @@ export default function Header() {
           <p className="col-sm-12 col-lg-7 col-md-12">
             "Los santos no sólo están en estampitas, también están en las
             calles, donando su vida por amor a los demás. Si eso no es ser
-            santo, entoces ¿Qué lo será?"
+            santo, entonces ¿Qué lo será?"
           </p>
           <div className="social-links">
             <a href="#" className="twitter">
@@ -81,11 +81,13 @@ export default function Header() {
 
           <div className=" d-sm-block d-md-none d-lg-none archivos-container">
             <button className="btn btn-sm lb-btn mb-2 mt-4">
-              <a href="#testimonio" style={{ color: "#fff" }} >Subir Testimonio</a>
+              <a href="#testimonio" style={{ color: "#fff" }}>
+                Subir Testimonio
+              </a>
             </button>
           </div>
         </div>
-      </section >
+      </section>
     </>
   );
 }
