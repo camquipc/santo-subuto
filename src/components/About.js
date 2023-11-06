@@ -21,7 +21,9 @@ export const About = () => {
               />
             </div>
             <div className="col-lg-7 pt-4 pt-lg-0 content text-justificado">
-              <h4 className="about-h4 t-titulo-b">¿Quién fue el Padre Jorge Bissoni?</h4>
+              <h4 className="about-h4 t-titulo-b">
+                ¿Quién fue el Padre Jorge Bissoni?
+              </h4>
               <p className="fst-italic autor">
                 Por Francisco Campos, Rosalis Rosal
               </p>
@@ -31,8 +33,8 @@ export const About = () => {
                 de haber vivido una infancia marcada por las devastaciones de la
                 Segunda Guerra Mundial, sintió desde temprana edad su vocación
                 al sacerdocio y se unió al seminario menor a los 10 años, fue
-                ordenado sacerdote en 28 de junio de 1959, a la temprana edad de
-                19 años.
+                ordenado sacerdote en 28 de junio de 1964, a la temprana edad de
+                24 años.
               </p>
 
               <p>
@@ -135,10 +137,15 @@ export const About = () => {
                 loading="lazy"
               />
 
-              <strong >
+              <strong>
                 <span className="mt-3">
                   {"  "}
-                  <a href="descargas/doc.pdf" download={"padre_jorge_resumen.pdf"} style={{ color: "#fff" }}><BsFillFileEarmarkArrowDownFill /> Descargar Biografía</a>
+                  <a
+                    href="descargas/doc.pdf"
+                    download={"padre_jorge_resumen.pdf"}
+                    style={{ color: "#fff" }}>
+                    <BsFillFileEarmarkArrowDownFill /> Descargar Biografía
+                  </a>
                 </span>
               </strong>
             </div>
@@ -148,4 +155,3 @@ export const About = () => {
     </>
   );
 };
-
